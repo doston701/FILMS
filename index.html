@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Uzmovi</title>
+  </head>
+
+  <body>
+    <header></header>
+    <main class="main">
+      <h1 class="text-center mt-3 mb-4">Movies catalog</h1>
+      <section class="main-section container">
+        <div class="row">
+          <div class="film-left-top col-lg-3">
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control search mb-4"
+                placeholder="Kino nomini kiriting!"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+              <button class="btn btn-primary h-50">
+                <img src="./search.svg" alt="" />
+              </button>
+            </div>
+            <select
+              class="form-select select-list mb-4"
+              aria-label="Default select example"
+            >
+              <option selected value="All">All</option>
+            </select>
+            <select
+              class="form-select mb-4"
+              aria-label="Default select example"
+            >
+              <option selected>Rating (high to low)</option>
+              <option value="1">High</option>
+              <option value="2">Low</option>
+            </select>
+
+            <h2 class="text-dark mb-3">Saqlangan filmlar</h2>
+
+            <ul class="booked-films rounded mb-5 w-100"></ul>
+          </div>
+
+          <div class="col-lg-9">
+            <p class="d-inline-block">
+              Search Result: <span class="movies-result">0</span>
+            </p>
+            <p class="alert alert-info d-block p-2 rounded">
+              Use the form on the left to search movie
+            </p>
+
+            <ul class="movies__list">
+              <!-- <li class="movies__item">
+                <div class="card movies__card h-100">
+                  <img
+                    class="card-img-top"
+                    src="http://i3.ytimg.com/vi/4hZi5QaMBFc/hqdefault.jpg"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Patton Oswalt: Annihilation</h5>
+                    <p>2017</p>
+                    <p>7.4</p>
+                    <p>English</p>
+                    <div class="mt-auto d-flex justify-content-around">
+                      <a
+                        class="btn btn-outline-primary mt-auto"
+                        href="https://www.youtube.com/watch?v=4hZi5QaMBFc"
+                        >Watch Trailer</a
+                      ><button
+                        data-btn="tt7026230"
+                        class="btn btn-outline-success bookmark mt-3"
+                      >
+                        Bookmark
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./films.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
